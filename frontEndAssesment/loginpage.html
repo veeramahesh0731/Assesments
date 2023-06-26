@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>AgriFarm</title>
+    <link rel="stylesheet" href="/home/z0406@ad.ziffity.com/Documents/Assesment/Agriform.css">
+    <script src="https://kit.fontawesome.com/aa579eebce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AgriFarm</h1><br>
+            
+            <p> “To a farmer dirt is not a waste, it is wealth.
+                The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings.”</p>
+            </div>
+        <center>
+    <div class="form_box">
+        <h2 id="namefield">Sign Up</h2>
+       
+        <form>
+             
+            
+            <div class="inputfield">
+                <i class="fa-solid fa-user"></i>
+        <!-- <label for="fname">Username</label><br> -->
+        <input type="text" id="username" placeholder="username" value=""><br>
+   
+        </div>
+        <div class="inputfield">
+            <i class="fa-solid fa-key"></i>
+        <!-- <label for="fname">Password</label><br> -->
+        <input type="password" id="password" placeholder="password" value=""><br>
+       
+</div>
+        <p id="change"></p>
+        <p>Forget Password<a href="#"> Click Here!</a></p>
+    <div class="btnfield">
+        <button id="sign_up"  type="button" onclick="signup()">Sign Up</button>
+        <button class="disable" type="button" id="sign_in" onclick="signin()" >Sign In</button>
+      </div>
+    </form>
+        
+    </div>
+    </center>
+    </div>
+    <script>
+        // var username,password;
+        
+        
+        // console.log('hello')
+     function signin(){
+        document.getElementById("namefield").innerHTML= "Sign In";
+        document.getElementById("sign_up").classList.add("disable");
+        document.getElementById("sign_in").classList.remove("disable");
+        // if(username===signup[username] &&password===signup[password]){
+        //     window.location.href = "homepage.html";
+        // }
+        // else{
+        //     document.getElementById(change).innerHTML="Invalid";
+        // }
+        var enterUsername = document.getElementById('username').value;
+
+        var enterPassword = document.getElementById('password').value;
+
+        var getUsername=localStorage.getItem("userName");
+
+        var getPassword=localStorage.getItem("passWord");
+
+        if(enterUsername==getUsername){
+            if(enterPassword==getPassword){
+                window.location.href = "homepage.html";
+                alert("login Successful");
+            }
+            else{
+                alert("Invalid Password");
+            }
+        }
+        else{
+            alert("Invalid Details");
+        }
+
+        // console.log(username,password)
+        // localStorage.setItem('signin',JSON.stringify({"username":username,'password':password}))
+     
+        
+       
+        // document.getElementById("username").value="";
+        // document.getElementById("password").value="";
+
+       
+     }
+    
+     function signup(){
+        document.getElementById("namefield").innerHTML= "Sign Up";
+        document.getElementById("sign_in").classList.add("disable");
+        document.getElementById("sign_up").classList.remove("disable");
+
+        var username = document.getElementById('username').value;
+
+         var password = document.getElementById('password').value;
+
+         localStorage.setItem("userName",username);
+         localStorage.setItem("passWord",password);
+
+        // console.log(username,password)
+        // localStorage.setItem('signup',JSON.stringify({"username":username,'password':password}))
+
+        // username1 = localStorage.getItem(signup);
+        // var  password1=localStorage.getItem(key);
+      
+        document.getElementById("username").value="";
+        document.getElementById("password").value="";
+        alert("SignUp Successful");
+       
+     }
+     
+    </script>
+</body>
+</html

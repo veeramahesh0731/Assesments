@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+.dropmenu{
+   margin: 10px;
+    background-color:  #1a2456;
+    border-radius: 10px;
+    text-align: right;
+
+}
+.dropmenu ul{
+    display: inline-flex;
+    list-style-type: none;
+    padding-bottom: 15px;
+    margin: 10px;
+}
+
+.dropmenu ul li{
+    padding: 8px;
+    margin:10px;
+    text-align: center;
+    font-size: larger;
+    color: #ff8b68;
+    
+   
+}
+.dropmenu ul li a{
+    text-decoration: none;
+    color: #ff8b68;
+}
+.dropmenu ul li a:hover{
+    color: #f0efed;
+    border-radius: 2px;
+}
+.menubar1{
+    display:none;
+}
+.dropmenu ul li:hover .menubar1{
+     display: block;
+    position: absolute;
+    background: #1a2456;
+    font-size: medium;
+    margin-top: 15px;
+    margin-left: 15px; 
+}
+.dropmenu ul li:hover .menubar1 ul{
+    display: block;
+    margin: 8px;
+}
+.dropmenu ul li:hover .menubar1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #ff8b68 ;
+    background:transparent;
+    border-radius: 3px;
+    text-align: left;
+}
+.dropmenu ul li:hover .menubar1 ul li:last-child{
+    border-bottom: none;
+}
+.dropmenu ul li:hover .menubar1 ul li a:hover{
+    color:#f0efed;
+}
+
+
+/* .content .process{
+    text-align: center;
+} */
+.content .process h3{
+    width: 30%;
+    background-color: gainsboro;
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 3%;
+    padding-left: 2%;
+    border-left:4px  solid #1a2456;
+    border-right: 4px solid #1a2456;
+    font-size: 30px;
+    padding: 0.5%;
+}
+.content .process p{
+    /* text-align: center; */
+    text-indent: 50px;
+    font-size: 22px;
+    margin-top:2%;
+    word-spacing: 2%;
+
+}
+.content .process img{
+    margin-top: 2%;
+    margin-left: 25%;
+    border-radius: 5px;
+    
+}
+.content .process .describe{
+    /* text-align: center; */
+    margin-left: 23%;
+    font-style: italic;
+}
+.content .process .intro-discuss{
+    margin-left: 2%;
+    /* line-height: 7.5%; */
+    font-size: 22px;
+    word-spacing: 2%;
+    /* line-break: 5px; */
+    
+}
+.process #brinjalfarming2{
+    width: 30%;
+    
+
+}
+.process #brinjalfarming3{
+    width: 30%;
+    
+
+}
+.content .process .varieties{
+    font-size: 22px;
+    margin: 4% 0 0 10%;
+    word-spacing: 2%;
+}
+.content .process h2{
+    margin: 2% 0 0 4%
+}
+.process #brinjalfarming4{
+    width: 35%;
+    
+
+}
+.content{
+    margin-bottom: 4%;
+}
+.content h1{
+    background-color: gainsboro;
+    border:2px solid #1a2456 ;
+    text-align: center;
+    width: 40%;
+    margin: 2% 0 0 25%;
+    padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: auto;
+    background-color: #1a2456;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #ff8b68;
+    border-radius: 0 0 5px 5px ;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.footer-container h3{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.footer-container p{
+    margin: 15px auto;
+    line-height: 25px;
+    font-size: 16px;
+}
+.footer-container ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* margin: 5px 0 10px 0; */
+}
+.footer-container ul li{
+    margin: 0 10px;
+}
+.footer-container ul li a{
+    text-decoration: none;
+}
