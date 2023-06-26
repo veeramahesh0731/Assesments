@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width =device-width,initial-scale=1.0">
+        <title>
+            Home Page
+        </title>
+        <link rel="stylesheet" href="/home/z0406@ad.ziffity.com/Documents/Assesment/homepage.css">
+        <script src="https://kit.fontawesome.com/aa579eebce.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <div class="container">
+        <section>
+            <div class="dropmenu">
+               
+                <ul>
+                   
+                    <li ><a href="#" onclick="homepage()" >Home</a></li>
+                    <li><a href="#">Fertilizers</a>
+                        <div class="menubar1">
+                            <ul>
+                                <li><a href="#" >Urea</a></li>
+                                <li><a href="#">Potassium Sulphate</a></li>
+                                <li><a href="#">Ammonium Sulphate</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Farming</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" onclick="login()">Sign In</a></li>
+                </ul>
+            </div>
+           
+        </section>
+            <div class="img1">
+                <img src="/home/z0406@ad.ziffity.com/Documents/Assesment/pexels-2.jpg" alt="farmcultivate">
+            </div>
+           
+            <section>
+                <div class="img2">
+                    <img class="farm" id="paddy" src="/home/z0406@ad.ziffity.com/Documents/Assesment/pexels-1.jpg" alt="paddy"/>
+                    <div class="content">
+                        <h2>Paddy</h2>
+                        <p>small, level, flooded field used to cultivate rice in southern and eastern Asia</p>
+                    </div>
+                   
+                    <img class="farm" id="cabbage" src="/home/z0406@ad.ziffity.com/Documents/Assesment/cabbage.jpeg" alt="cabbage">
+                    <div class="content1">
+                        <h2>Cabbage</h2>
+                        <p> A chemical in cabbage may protect against the negative effects of radiation.</p>
+                    </div>
+                </div>
+                <div>
+                   
+                    <div class="content2">
+                        <h2>Corn/Maize</h2>
+                        <p>cereal plant of the grass family (Poaceae) and its edible grain.</p>
+                   
+                    </div>
+                    <a target="_blank" href="https://www.britannica.com/topic/corn-plant"><img class="farm" id="corn" src="/home/z0406@ad.ziffity.com/Documents/Assesment/corn.jpg" alt="corn"></a>
+                    
+                </div>
+            </section>
+            <div class="level2">
+                <div>
+                <a target="_blank"><img id="brinjal" src="/home/z0406@ad.ziffity.com/Documents/Assesment/brinjal.jpg" onclick=brinjal() alt="Brinjal"></a>
+                <div class="descr">
+                <p>Brinjal </p> 
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Eggplant"><p class="know">To know</p></a>
+                </div>
+               
+                </div>
+                    <div>
+                <a target="_blank"><img id="carrot" src="/home/z0406@ad.ziffity.com/Documents/Assesment/carrrot.jpg" onclick="carrot()" alt="Carrot"></a>
+                 <div class="descr">
+                <p>Carrot</p>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Carrot"><p class="know">To know</p></a>
+                </div>
+                </div>
+                <div>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Potato"><img id="potato" src="/home/z0406@ad.ziffity.com/Documents/Assesment/potato.jpg" alt="Potato"></a>
+                <div class="descr">
+                <p>Potato</p>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Potato"><p class="know">To know</p></a>
+                </div>
+                </div>
+                <div>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Chili_pepper"><img id="mirchi" src="/home/z0406@ad.ziffity.com/Documents/Assesment/mirchi.jpg" alt="Mirchi"></a>
+                <div class="descr">
+                <p>Mirchi</p>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Chili_pepper"><p class="know">To know</p></a>
+                </div>
+                </div>
+                <div>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Tomato"><img id="tamato" src="/home/z0406@ad.ziffity.com/Documents/Assesment/tamato.jpg" alt="Tamato"></a>
+                <div class="descr">
+                <p>Tamato</p>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Tomato"><p class="know">To know</p></a>
+                </div>
+                </div>
+            </div>
+          <footer>
+            <div class="footer-container">
+            <h3>AgriFarm</h3>
+            <p>I believe in the future of agriculture, with a faith born not of words but of deeds.</p>
+            <ul>
+                <li><a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: #ff8b68;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" style="color: #ff8b68;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin" style="color: #ff8b68;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g" style="color: #ff8b68;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" style="color: #ff8b68;"></i></a></li>
+            </ul>
+             
+        </div>
+          </footer>  
+          </div>
+        
+
+
+          <script>
+            function brinjal(){
+                window.location.href = "brinjal.html";
+            }
+            function carrot(){
+                window.location.href = "Carrot.html";
+            }
+            function login(){
+                window.location.href = "loginpage.html";
+            }
+            function homepage(){
+                window.location.href = "homepage.html";
+            }
+          </script>
+    </body>
+</html>
